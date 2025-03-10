@@ -1,0 +1,1832 @@
+{
+  "modelName": "Sql model",
+  "collections": [
+    {
+      "GUID": "f8cdf041-a409-4fd6-95f2-ea9d6fbba901",
+      "collectionName": "campaigns",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "id",
+          "isActivated": true,
+          "primaryKey": true,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "serial",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "f315e2ee-8b1b-4527-84e2-1746728a7855",
+          "childRelationships": [
+            "90762f35-0a62-428d-a14e-e0fc94679673"
+          ],
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "campaign_type",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "b4f8d9fd-96b1-4c42-9c9d-c800ac53baee",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "channel",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "719d505c-783d-4046-bcf2-e32c4b3c1b5d",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "topic",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 255,
+          "array_type": [],
+          "GUID": "dab5c644-9014-442e-8c60-5322d8a9cc61",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "started_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "be0b5db7-5080-44bc-8482-d692e80f10b5",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "finished_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "785ac0c1-ab30-4b29-8979-c11ab09a0221",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "total_count",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "c64bc88e-310b-4c8f-a664-df420a063d84",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "ab_test",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "045ad320-2652-4e93-be81-120fed49aaf3",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "warmup_mode",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "15820a69-4d7e-4705-b6e4-1de5cf81a070",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "hour_limit",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "acb09da5-d529-48a7-b95a-eee970b9cc2c",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "subject_length",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "3be8c1b9-d888-4b4e-8ba1-c0df3c0715dc",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "subject_with_personalization",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "c1ad62c8-cad1-4ef5-a1f0-d6622729c0dc",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "subject_with_deadline",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "d3a28a0f-85dc-4ff4-aa18-33e5ece62210",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "subject_with_emoji",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "a6425a98-cf61-4ae1-af21-e51ab713fbb0",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "subject_with_bonuses",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "09df0411-068d-466c-971a-fa51e880bf2d",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "subject_with_discount",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "d1729ae6-3d07-445a-9057-cf3c21113ab3",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "subject_with_saleout",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "afb0e3e0-cfc3-4fc0-9ee8-604784a491bb",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_test",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "f651be54-b0cb-4c27-8c2a-9fda7dfcfb2a",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "position",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "7d27bfa3-6b72-4836-8da4-087a85eb46d7",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "cbde01bf-8511-4b3c-b0ac-c9dc1643e31f"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "memory_optimized": false,
+      "collectionUsers": [],
+      "ifNotExist": true,
+      "on_commit": "PRESERVE ROWS",
+      "table_tablespace_name": "",
+      "code": "",
+      "bucketId": "ebfa384d-47a3-47a2-bd0a-c545e47efa87",
+      "temporary": false,
+      "unlogged": false,
+      "inherits": [],
+      "partitioning": [],
+      "usingMethod": "",
+      "primaryKey": [],
+      "uniqueKey": [],
+      "chkConstr": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "52c7058e-ae46-4746-9d1c-c48b27390482",
+      "collectionName": "client_first_purchase",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "client_id",
+          "isActivated": true,
+          "primaryKey": true,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "bigint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "93366106-cf8a-4c39-a137-6cd71a942988",
+          "childRelationships": [
+            "69ba2020-5190-469e-960f-ee4d0500b3ac"
+          ],
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "first_purchase_date",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "date",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "5d151508-7cf7-4cce-be0d-b89388d18a7a",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "user_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": true,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "bigint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1",
+          "childRelationships": [
+            "4485226c-70e1-4e92-8a2d-548781b1f815",
+            "b398fd6d-70a4-4b07-bf57-9e7f8cf07b93",
+            "9bee7917-8e8c-43b6-afd8-c2f216a8770b"
+          ],
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "user_device_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "64b51464-7366-49d4-9de4-bfbf4a09b47a",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "8bfd7403-d79a-4da2-a871-ce0fb273d5b2"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "memory_optimized": false,
+      "collectionUsers": [],
+      "ifNotExist": true,
+      "on_commit": "PRESERVE ROWS",
+      "table_tablespace_name": "",
+      "code": "",
+      "bucketId": "ebfa384d-47a3-47a2-bd0a-c545e47efa87",
+      "temporary": false,
+      "unlogged": false,
+      "inherits": [],
+      "partitioning": [],
+      "usingMethod": "",
+      "primaryKey": [],
+      "uniqueKey": [],
+      "chkConstr": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "57738d7f-9ce6-4378-b32d-a64e8936914d",
+      "collectionName": "events",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "event_id",
+          "isActivated": true,
+          "primaryKey": true,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "serial",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "40c2ab65-2e3e-4e38-b65c-209849d7e418",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "event_time",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "9b3dc183-9eb7-406c-976a-da956da222a1",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "event_type",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "3b6a46cf-c5e5-4e78-bf0e-ac716640cf9c",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "product_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "f5966116-4110-4ecb-be54-bf75a6895a87",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "category_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "053e9032-fea0-4a3a-a9ef-576d3622902a",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "category_code",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 255,
+          "array_type": [],
+          "GUID": "9a595c4e-f59c-4b66-9da3-03500c83f6ca",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "brand",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 255,
+          "array_type": [],
+          "GUID": "bbce8183-0243-4a8f-b4f5-8978828c5065",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "price",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "1904920e-e539-4098-b370-67df46a76a7d",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "user_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "bigint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "0d5b5e73-85cb-43c4-99e9-77886798dc7b",
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "4485226c-70e1-4e92-8a2d-548781b1f815",
+          "foreignCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "foreignField": [
+            "52c7058e-ae46-4746-9d1c-c48b27390482",
+            "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1"
+          ],
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "user_session",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "childType": "uuid",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "6e033c9e-f817-4450-b7f3-b62b0ac837e7",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "10e08eff-9ea0-4dd5-b2a1-8cb5ac6431e7"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "memory_optimized": false,
+      "collectionUsers": [],
+      "ifNotExist": true,
+      "on_commit": "PRESERVE ROWS",
+      "table_tablespace_name": "",
+      "code": "",
+      "bucketId": "ebfa384d-47a3-47a2-bd0a-c545e47efa87",
+      "temporary": false,
+      "unlogged": false,
+      "inherits": [],
+      "partitioning": [],
+      "usingMethod": "",
+      "primaryKey": [],
+      "uniqueKey": [],
+      "chkConstr": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "5b73c165-af7c-474c-885d-8e9466585be9",
+      "collectionName": "friends",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "friend1",
+          "isActivated": true,
+          "primaryKey": true,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "bigint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": true,
+          "GUID": "501e452e-336b-4547-89c7-2cb624c444bf",
+          "compositeKey": [
+            "compositePrimaryKey"
+          ],
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "b398fd6d-70a4-4b07-bf57-9e7f8cf07b93",
+          "foreignCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "foreignField": [
+            "52c7058e-ae46-4746-9d1c-c48b27390482",
+            "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1"
+          ],
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "friend2",
+          "isActivated": true,
+          "primaryKey": true,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "bigint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": true,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": true,
+          "GUID": "4be5d31f-f51f-4bf9-ba91-87ffdf95f58e",
+          "compositeKey": [
+            "compositePrimaryKey"
+          ],
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "9bee7917-8e8c-43b6-afd8-c2f216a8770b",
+          "foreignCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "foreignField": [
+            "52c7058e-ae46-4746-9d1c-c48b27390482",
+            "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1"
+          ],
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "0b83a88b-80b0-4059-81b6-d2b4171a1411"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "memory_optimized": false,
+      "collectionUsers": [],
+      "ifNotExist": true,
+      "on_commit": "PRESERVE ROWS",
+      "table_tablespace_name": "",
+      "code": "",
+      "bucketId": "ebfa384d-47a3-47a2-bd0a-c545e47efa87",
+      "temporary": false,
+      "unlogged": false,
+      "inherits": [],
+      "partitioning": [],
+      "usingMethod": "",
+      "primaryKey": [
+        {
+          "deferrable": "",
+          "GUID": "ca2495b4-8fad-4b66-a5bf-7145c389dfa6",
+          "constraintName": "",
+          "compositePrimaryKey": [
+            {
+              "keyId": "501e452e-336b-4547-89c7-2cb624c444bf"
+            },
+            {
+              "keyId": "4be5d31f-f51f-4bf9-ba91-87ffdf95f58e"
+            }
+          ],
+          "indexInclude": [],
+          "indexTablespace": ""
+        }
+      ],
+      "uniqueKey": [],
+      "chkConstr": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    },
+    {
+      "GUID": "bfe4da39-abdd-41bd-bd04-d85158011f15",
+      "collectionName": "messages",
+      "type": "object",
+      "properties": [
+        {
+          "code": "",
+          "name": "id",
+          "isActivated": true,
+          "primaryKey": true,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "serial",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "f5c126d0-5ea5-47ea-aa6a-a28bea359e55",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "message_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": true,
+          "childType": "uuid",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "7abb9d73-a155-4aad-b491-e19705c69232",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "campaign_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "8602db1f-23ab-4dd8-836e-82ca6d762a9e",
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "90762f35-0a62-428d-a14e-e0fc94679673",
+          "foreignCollection": "f8cdf041-a409-4fd6-95f2-ea9d6fbba901",
+          "foreignField": [
+            "f8cdf041-a409-4fd6-95f2-ea9d6fbba901",
+            "f315e2ee-8b1b-4527-84e2-1746728a7855"
+          ],
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "message_type",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "e56d5243-4ad0-4de5-986e-3c751239b8c0",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "client_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "bigint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "8d278ef2-aec5-4a83-b6fc-dc222fc8396e",
+          "relationshipType": "Foreign Key",
+          "parentRelationship": "69ba2020-5190-469e-960f-ee4d0500b3ac",
+          "foreignCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "foreignField": [
+            "52c7058e-ae46-4746-9d1c-c48b27390482",
+            "93366106-cf8a-4c39-a137-6cd71a942988"
+          ],
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "channel",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "9c76627b-efee-4952-adc0-621760d634ce",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "category",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "e78ab3e4-ec67-41a8-a11e-f5b78d7df0b3",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "platform",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "21d50bd5-4613-42b6-95b1-e766b38efb0e",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "email_provider",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 255,
+          "array_type": [],
+          "GUID": "d6c26f65-2b4d-409a-86ab-174589dfa3a4",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "stream",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "varchar",
+          "required": false,
+          "childType": "char",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "length": 50,
+          "array_type": [],
+          "GUID": "d8d9af84-5e87-4475-8b34-6fc1f2c2c92d",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "date",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "date",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "c2d9701f-c2a1-49f5-ae0a-6f1a9282137c",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "sent_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "e2e6a6db-aa0d-416b-9ff0-2c10f858288b",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_opened",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "33449b43-41d0-4cde-b03a-9a7c6f2b3216",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "opened_first_time_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "fd2c2d6f-c686-49bd-87ef-76e22fd98518",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "opened_last_time_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "73531a5f-78de-4210-b147-4436afcf5427",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_clicked",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "255a198d-33b2-4e7a-a464-d69d55b48349",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "clicked_first_time_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "60026f97-e845-4852-ad85-007083d21e10",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "clicked_last_time_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "76fe2eeb-dc18-4685-988b-e6a1e3e6f37c",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_unsubscribed",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "c33b845d-7847-4360-b8d2-9e3b1cb09dee",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "unsubscribed_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "77f37651-3a7e-40b2-89f8-90f946916829",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_hard_bounced",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "68397fd4-f528-47bd-90c7-b1a870944d20",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "hard_bounced_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "bfd7d306-5402-4e9c-8cc4-2ace05bf6fc9",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_soft_bounced",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "1e019ac1-31a5-468d-9c70-25ebac44aca8",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "soft_bounced_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "eff7a4ec-97de-4383-9965-7273e26ebf8a",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_complained",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "1bd2e9e6-b73c-403f-b884-ac62bb98421e",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "complained_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "0567a00e-a066-4262-b48d-569da2af83ac",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_blocked",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "84fb69f5-8ba7-40b5-8316-d3ad2b4de7d9",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "blocked_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "b6f495f0-69b4-4905-a915-b9bfe4e3563c",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "is_purchased",
+          "isActivated": true,
+          "childType": "boolean",
+          "type": "boolean",
+          "array_type": [],
+          "required": false,
+          "GUID": "fd21660b-6065-47b3-87bd-81f471335859",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "purchased_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "fabb866e-5ca2-471f-ae98-3474625c35a4",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "created_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "0873b6b0-7212-4d7a-a4cb-ab7c962873f0",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "updated_at",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "mode": "timestamp",
+          "childType": "datetime",
+          "type": "string",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "timezone": "",
+          "timePrecision": "",
+          "array_type": [],
+          "required": false,
+          "GUID": "68431cd6-38a7-4606-930f-742b029fc353",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "user_device_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "numeric",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "4017ae75-b45e-456f-be36-564725fc3188",
+          "error": {}
+        },
+        {
+          "code": "",
+          "name": "user_id",
+          "isActivated": true,
+          "primaryKey": false,
+          "unique": false,
+          "exclusiveMinimum": false,
+          "exclusiveMaximum": false,
+          "mode": "bigint",
+          "childType": "numeric",
+          "type": "numeric",
+          "compositePrimaryKey": false,
+          "compositeUniqueKey": false,
+          "array_type": [],
+          "required": false,
+          "GUID": "ee1b77e6-46b1-4c59-bb5b-3de127abf46a",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "125618e4-cc72-493c-bb01-c8af45d48fc9"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "memory_optimized": false,
+      "collectionUsers": [],
+      "ifNotExist": true,
+      "on_commit": "PRESERVE ROWS",
+      "table_tablespace_name": "",
+      "code": "",
+      "bucketId": "ebfa384d-47a3-47a2-bd0a-c545e47efa87",
+      "temporary": false,
+      "unlogged": false,
+      "inherits": [],
+      "partitioning": [],
+      "usingMethod": "",
+      "primaryKey": [],
+      "uniqueKey": [],
+      "chkConstr": [],
+      "hackoladeMeta": {
+        "validationErrors": {}
+      }
+    }
+  ],
+  "buckets": [
+    {
+      "name": "ecommerce",
+      "type": "bucket",
+      "collectionIds": [
+        "f8cdf041-a409-4fd6-95f2-ea9d6fbba901",
+        "52c7058e-ae46-4746-9d1c-c48b27390482",
+        "57738d7f-9ce6-4378-b32d-a64e8936914d",
+        "5b73c165-af7c-474c-885d-8e9466585be9",
+        "bfe4da39-abdd-41bd-bd04-d85158011f15"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "ifNotExist": true,
+      "GUID": "ebfa384d-47a3-47a2-bd0a-c545e47efa87",
+      "hackoladeMeta": {},
+      "sequences": [],
+      "UDFs": [],
+      "Procedures": []
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "name": "client_first_purchase_user_id_to_events_user_id",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "57738d7f-9ce6-4378-b32d-a64e8936914d",
+          "0d5b5e73-85cb-43c4-99e9-77886798dc7b"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "GUID": "4485226c-70e1-4e92-8a2d-548781b1f815",
+      "parentCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+      "childCollection": "57738d7f-9ce6-4378-b32d-a64e8936914d",
+      "hackoladeStyles": {
+        "GUID": "5fa7794b-9fd5-4600-a5db-54ae12f76fb2",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1295,
+            "y": 1904.5
+          },
+          {
+            "x": 1533.8124999999995,
+            "y": 1904.5
+          },
+          {
+            "x": 1533.8124999999995,
+            "y": 1483.0624999999989
+          },
+          {
+            "x": 1772.624999999999,
+            "y": 1483.0624999999989
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "client_first_purchase_user_id_to_friends_friend1",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "5b73c165-af7c-474c-885d-8e9466585be9",
+          "501e452e-336b-4547-89c7-2cb624c444bf"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "GUID": "b398fd6d-70a4-4b07-bf57-9e7f8cf07b93",
+      "parentCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+      "childCollection": "5b73c165-af7c-474c-885d-8e9466585be9",
+      "hackoladeStyles": {
+        "GUID": "b0bd6cd2-4b47-46f2-8bd5-65d7c3ab7186",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1927.3333333333333,
+            "y": 1115
+          },
+          {
+            "x": 1927.3333333333333,
+            "y": 1265.3645833333328
+          },
+          {
+            "x": 1940.624999999999,
+            "y": 1265.3645833333328
+          },
+          {
+            "x": 1940.624999999999,
+            "y": 1415.7291666666656
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
+    },
+    {
+      "name": "client_first_purchase_user_id_to_friends_friend2",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "5b73c165-af7c-474c-885d-8e9466585be9",
+          "4be5d31f-f51f-4bf9-ba91-87ffdf95f58e"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "GUID": "9bee7917-8e8c-43b6-afd8-c2f216a8770b",
+      "parentCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+      "childCollection": "5b73c165-af7c-474c-885d-8e9466585be9",
+      "hackoladeStyles": {
+        "GUID": "2b0bd579-615e-4c23-946a-87353a8f36bd",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1863.6666666666667,
+            "y": 1115
+          },
+          {
+            "x": 1863.6666666666667,
+            "y": 1265.3645833333328
+          },
+          {
+            "x": 1856.624999999999,
+            "y": 1265.3645833333328
+          },
+          {
+            "x": 1856.624999999999,
+            "y": 1415.7291666666656
+          }
+        ],
+        "sides": [
+          "bottom",
+          "top"
+        ]
+      }
+    },
+    {
+      "name": "campaigns_id_to_messages_campaign_id",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "f8cdf041-a409-4fd6-95f2-ea9d6fbba901",
+          "f315e2ee-8b1b-4527-84e2-1746728a7855"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "bfe4da39-abdd-41bd-bd04-d85158011f15",
+          "8602db1f-23ab-4dd8-836e-82ca6d762a9e"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "GUID": "90762f35-0a62-428d-a14e-e0fc94679673",
+      "parentCollection": "f8cdf041-a409-4fd6-95f2-ea9d6fbba901",
+      "childCollection": "bfe4da39-abdd-41bd-bd04-d85158011f15",
+      "hackoladeStyles": {
+        "GUID": "ff51c78c-71ae-4876-beb9-762f081d71f6",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1322.0000000000007,
+            "y": 1547.7708333333328
+          },
+          {
+            "x": 1500.6979166666665,
+            "y": 1547.7708333333328
+          },
+          {
+            "x": 1500.6979166666665,
+            "y": 1840.0000000000005
+          },
+          {
+            "x": 1679.3958333333326,
+            "y": 1840.0000000000005
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
+    },
+    {
+      "name": "client_first_purchase_client_id_to_messages_client_id",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "52c7058e-ae46-4746-9d1c-c48b27390482",
+          "93366106-cf8a-4c39-a137-6cd71a942988"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "bfe4da39-abdd-41bd-bd04-d85158011f15",
+          "8d278ef2-aec5-4a83-b6fc-dc222fc8396e"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "1..n",
+      "GUID": "69ba2020-5190-469e-960f-ee4d0500b3ac",
+      "parentCollection": "52c7058e-ae46-4746-9d1c-c48b27390482",
+      "childCollection": "bfe4da39-abdd-41bd-bd04-d85158011f15",
+      "hackoladeStyles": {
+        "GUID": "1b7bffff-e8e2-4230-95ac-907bb40a6f8e",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1322.0000000000007,
+            "y": 1334.1041666666663
+          },
+          {
+            "x": 1547.3125,
+            "y": 1334.1041666666663
+          },
+          {
+            "x": 1547.3125,
+            "y": 1466.2291666666656
+          },
+          {
+            "x": 1772.624999999999,
+            "y": 1466.2291666666656
+          }
+        ],
+        "sides": [
+          "right",
+          "left"
+        ]
+      }
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "ebfa384d-47a3-47a2-bd0a-c545e47efa87": "ecommerce",
+    "f315e2ee-8b1b-4527-84e2-1746728a7855": "id",
+    "b4f8d9fd-96b1-4c42-9c9d-c800ac53baee": "campaign_type",
+    "719d505c-783d-4046-bcf2-e32c4b3c1b5d": "channel",
+    "dab5c644-9014-442e-8c60-5322d8a9cc61": "topic",
+    "be0b5db7-5080-44bc-8482-d692e80f10b5": "started_at",
+    "785ac0c1-ab30-4b29-8979-c11ab09a0221": "finished_at",
+    "c64bc88e-310b-4c8f-a664-df420a063d84": "total_count",
+    "045ad320-2652-4e93-be81-120fed49aaf3": "ab_test",
+    "15820a69-4d7e-4705-b6e4-1de5cf81a070": "warmup_mode",
+    "acb09da5-d529-48a7-b95a-eee970b9cc2c": "hour_limit",
+    "3be8c1b9-d888-4b4e-8ba1-c0df3c0715dc": "subject_length",
+    "c1ad62c8-cad1-4ef5-a1f0-d6622729c0dc": "subject_with_personalization",
+    "d3a28a0f-85dc-4ff4-aa18-33e5ece62210": "subject_with_deadline",
+    "a6425a98-cf61-4ae1-af21-e51ab713fbb0": "subject_with_emoji",
+    "09df0411-068d-466c-971a-fa51e880bf2d": "subject_with_bonuses",
+    "d1729ae6-3d07-445a-9057-cf3c21113ab3": "subject_with_discount",
+    "afb0e3e0-cfc3-4fc0-9ee8-604784a491bb": "subject_with_saleout",
+    "f651be54-b0cb-4c27-8c2a-9fda7dfcfb2a": "is_test",
+    "7d27bfa3-6b72-4836-8da4-087a85eb46d7": "position",
+    "f8cdf041-a409-4fd6-95f2-ea9d6fbba901": "campaigns",
+    "93366106-cf8a-4c39-a137-6cd71a942988": "client_id",
+    "5d151508-7cf7-4cce-be0d-b89388d18a7a": "first_purchase_date",
+    "02095d6d-3e8c-41df-a0cd-8f7a6194c2a1": "user_id",
+    "64b51464-7366-49d4-9de4-bfbf4a09b47a": "user_device_id",
+    "52c7058e-ae46-4746-9d1c-c48b27390482": "client_first_purchase",
+    "40c2ab65-2e3e-4e38-b65c-209849d7e418": "event_id",
+    "9b3dc183-9eb7-406c-976a-da956da222a1": "event_time",
+    "3b6a46cf-c5e5-4e78-bf0e-ac716640cf9c": "event_type",
+    "f5966116-4110-4ecb-be54-bf75a6895a87": "product_id",
+    "053e9032-fea0-4a3a-a9ef-576d3622902a": "category_id",
+    "9a595c4e-f59c-4b66-9da3-03500c83f6ca": "category_code",
+    "bbce8183-0243-4a8f-b4f5-8978828c5065": "brand",
+    "1904920e-e539-4098-b370-67df46a76a7d": "price",
+    "0d5b5e73-85cb-43c4-99e9-77886798dc7b": "user_id",
+    "6e033c9e-f817-4450-b7f3-b62b0ac837e7": "user_session",
+    "57738d7f-9ce6-4378-b32d-a64e8936914d": "events",
+    "501e452e-336b-4547-89c7-2cb624c444bf": "friend1",
+    "4be5d31f-f51f-4bf9-ba91-87ffdf95f58e": "friend2",
+    "5b73c165-af7c-474c-885d-8e9466585be9": "friends",
+    "f5c126d0-5ea5-47ea-aa6a-a28bea359e55": "id",
+    "7abb9d73-a155-4aad-b491-e19705c69232": "message_id",
+    "8602db1f-23ab-4dd8-836e-82ca6d762a9e": "campaign_id",
+    "e56d5243-4ad0-4de5-986e-3c751239b8c0": "message_type",
+    "8d278ef2-aec5-4a83-b6fc-dc222fc8396e": "client_id",
+    "9c76627b-efee-4952-adc0-621760d634ce": "channel",
+    "e78ab3e4-ec67-41a8-a11e-f5b78d7df0b3": "category",
+    "21d50bd5-4613-42b6-95b1-e766b38efb0e": "platform",
+    "d6c26f65-2b4d-409a-86ab-174589dfa3a4": "email_provider",
+    "d8d9af84-5e87-4475-8b34-6fc1f2c2c92d": "stream",
+    "c2d9701f-c2a1-49f5-ae0a-6f1a9282137c": "date",
+    "e2e6a6db-aa0d-416b-9ff0-2c10f858288b": "sent_at",
+    "33449b43-41d0-4cde-b03a-9a7c6f2b3216": "is_opened",
+    "fd2c2d6f-c686-49bd-87ef-76e22fd98518": "opened_first_time_at",
+    "73531a5f-78de-4210-b147-4436afcf5427": "opened_last_time_at",
+    "255a198d-33b2-4e7a-a464-d69d55b48349": "is_clicked",
+    "60026f97-e845-4852-ad85-007083d21e10": "clicked_first_time_at",
+    "76fe2eeb-dc18-4685-988b-e6a1e3e6f37c": "clicked_last_time_at",
+    "c33b845d-7847-4360-b8d2-9e3b1cb09dee": "is_unsubscribed",
+    "77f37651-3a7e-40b2-89f8-90f946916829": "unsubscribed_at",
+    "68397fd4-f528-47bd-90c7-b1a870944d20": "is_hard_bounced",
+    "bfd7d306-5402-4e9c-8cc4-2ace05bf6fc9": "hard_bounced_at",
+    "1e019ac1-31a5-468d-9c70-25ebac44aca8": "is_soft_bounced",
+    "eff7a4ec-97de-4383-9965-7273e26ebf8a": "soft_bounced_at",
+    "1bd2e9e6-b73c-403f-b884-ac62bb98421e": "is_complained",
+    "0567a00e-a066-4262-b48d-569da2af83ac": "complained_at",
+    "84fb69f5-8ba7-40b5-8316-d3ad2b4de7d9": "is_blocked",
+    "b6f495f0-69b4-4905-a915-b9bfe4e3563c": "blocked_at",
+    "fd21660b-6065-47b3-87bd-81f471335859": "is_purchased",
+    "fabb866e-5ca2-471f-ae98-3474625c35a4": "purchased_at",
+    "0873b6b0-7212-4d7a-a4cb-ab7c962873f0": "created_at",
+    "68431cd6-38a7-4606-930f-742b029fc353": "updated_at",
+    "4017ae75-b45e-456f-be36-564725fc3188": "user_device_id",
+    "ee1b77e6-46b1-4c59-bb5b-3de127abf46a": "user_id",
+    "bfe4da39-abdd-41bd-bd04-d85158011f15": "messages",
+    "4485226c-70e1-4e92-8a2d-548781b1f815": "client_first_purchase_user_id_to_events_user_id",
+    "b398fd6d-70a4-4b07-bf57-9e7f8cf07b93": "client_first_purchase_user_id_to_friends_friend1",
+    "9bee7917-8e8c-43b6-afd8-c2f216a8770b": "client_first_purchase_user_id_to_friends_friend2",
+    "90762f35-0a62-428d-a14e-e0fc94679673": "campaigns_id_to_messages_campaign_id",
+    "69ba2020-5190-469e-960f-ee4d0500b3ac": "client_first_purchase_client_id_to_messages_client_id"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "b3cbdd9f-cbbb-4acf-8668-6651ac0975b9"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "04b17bd7-ccf6-41a1-8ea9-a206a91529f5"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "1b92cfde-ba1b-4e46-b00b-9897d4e99292"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "v16.x",
+  "dbVendor": "PostgreSQL",
+  "tablespace_name": "pg_default",
+  "encoding": "UTF8",
+  "appTarget": "PostgreSQL",
+  "creationTS": "2025-03-08T17:09:38.704Z",
+  "GUID": "8ad03501-e8f4-4a83-8316-3a167bbf3feb",
+  "isLineageEnabled": false,
+  "code": "",
+  "lastModifTS": "2025-03-08T17:12:14.410Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginName": "PostgreSQL",
+    "pluginVersion": "0.2.20",
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.3"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "f8cdf041-a409-4fd6-95f2-ea9d6fbba901",
+            "x": 1679.3958333333326,
+            "y": 1654.5000000000005,
+            "width": 326,
+            "height": 371,
+            "color": {}
+          },
+          {
+            "GUID": "52c7058e-ae46-4746-9d1c-c48b27390482",
+            "x": 1772.624999999999,
+            "y": 1415.7291666666656,
+            "width": 252,
+            "height": 101,
+            "color": {}
+          },
+          {
+            "GUID": "57738d7f-9ce6-4378-b32d-a64e8936914d",
+            "x": 1050,
+            "y": 1800,
+            "width": 245,
+            "height": 209,
+            "color": {}
+          },
+          {
+            "GUID": "5b73c165-af7c-474c-885d-8e9466585be9",
+            "x": 1800,
+            "y": 1050,
+            "width": 191,
+            "height": 65,
+            "color": {}
+          },
+          {
+            "GUID": "bfe4da39-abdd-41bd-bd04-d85158011f15",
+            "x": 1041.0000000000007,
+            "y": 1120.4374999999995,
+            "width": 281,
+            "height": 641,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1001.0000000000007,
+            "y": 1010,
+            "GUID": "ebfa384d-47a3-47a2-bd0a-c545e47efa87"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
