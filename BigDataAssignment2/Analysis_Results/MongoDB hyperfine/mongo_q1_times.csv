@@ -1,0 +1,2 @@
+command,mean,stddev,median,user,system,min,max
+mongosh ecommerce --file C:/Users/Administrator/Desktop/BigDataAssignment2/scripts/q1.js,0.9096858219999999,0.012483948952034345,0.9062030420000001,0.364375,0.06218750000000001,0.8974639420000001,0.9275263420000001
