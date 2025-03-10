@@ -1,0 +1,67 @@
+ campaign_id |       campaign_topic       | total_recipients | total_purchasers | conversion_rate 
+-------------+----------------------------+------------------+------------------+-----------------
+          26 | order shipped              |             2683 |                0 |            0.00
+          27 | order created              |            13520 |                0 |            0.00
+          28 | order created              |              386 |                0 |            0.00
+          29 | order cancelled            |            10809 |                0 |            0.00
+          31 | order ready for pickup     |              282 |                0 |            0.00
+          32 | order ready for pickup     |            12791 |                0 |            0.00
+          33 | order pickup still pending |              197 |                0 |            0.00
+          54 | order created              |              782 |                0 |            0.00
+          55 | order ready for pickup     |              723 |                0 |            0.00
+          58 | order created              |              157 |                0 |            0.00
+          59 | order shipped              |              111 |                0 |            0.00
+          63 | sale out                   |             3960 |                0 |            0.00
+          64 | sale out                   |            21422 |                0 |            0.00
+          78 | sale out                   |             5676 |                0 |            0.00
+          79 | sale out                   |            21883 |                0 |            0.00
+          89 |                            |             4365 |                0 |            0.00
+         105 | order ready for pickup     |               98 |                0 |            0.00
+         110 | sale out                   |             7261 |                0 |            0.00
+         111 | sale out                   |            21645 |                0 |            0.00
+         122 | order shipped              |              222 |                0 |            0.00
+         123 | order pickup still pending |                9 |                0 |            0.00
+         136 | sale out                   |            10220 |                0 |            0.00
+         138 | sale out                   |             3961 |                0 |            0.00
+         139 | sale out                   |             6698 |                0 |            0.00
+         143 | sale out                   |             9330 |                0 |            0.00
+         149 | sale out                   |             4390 |                0 |            0.00
+         150 | sale out                   |            17037 |                0 |            0.00
+         152 | sale out                   |            23898 |                0 |            0.00
+         171 | sale out                   |             9657 |                0 |            0.00
+         174 | sale out                   |             5393 |                0 |            0.00
+         179 | profile updated            |             3789 |                0 |            0.00
+         196 | event                      |              393 |                0 |            0.00
+         217 | event                      |              192 |                0 |            0.00
+         219 |                            |             4319 |                0 |            0.00
+         221 | bonuses expired            |             6183 |                0 |            0.00
+         230 | sale out                   |            14275 |                0 |            0.00
+         231 | sale out                   |             8109 |                0 |            0.00
+         232 | order shipped              |               43 |                0 |            0.00
+         237 | wish list status           |                1 |                0 |            0.00
+         257 | sale out                   |            11827 |                0 |            0.00
+         258 | sale out                   |            11770 |                0 |            0.00
+         289 | sale out                   |             9530 |                0 |            0.00
+         296 | sale out                   |             5102 |                0 |            0.00
+         297 | sale out                   |            14592 |                0 |            0.00
+         298 | sale out                   |             6356 |                0 |            0.00
+         308 | sale out                   |             6868 |                0 |            0.00
+         337 | event                      |              406 |                0 |            0.00
+         355 | event                      |              198 |                0 |            0.00
+         358 | order created              |                1 |                0 |            0.00
+         361 | sale out                   |             9038 |                0 |            0.00
+         366 | sale out                   |             3781 |                0 |            0.00
+         368 | sale out                   |             1890 |                0 |            0.00
+         372 | sale out                   |             1340 |                0 |            0.00
+         373 | sale out                   |              349 |                0 |            0.00
+       18010 | abandoned cart             |            14663 |                0 |            0.00
+       18011 | abandoned category         |            18236 |                0 |            0.00
+       18012 | recent purchase            |            18548 |                0 |            0.00
+       18016 | subscribed                 |             5433 |                0 |            0.00
+       18212 | abandoned view             |            22288 |                0 |            0.00
+       18223 | added to wish list         |             4976 |                0 |            0.00
+       19017 | abandoned search           |             6425 |                0 |            0.00
+       19867 | price drop                 |                1 |                0 |            0.00
+       20519 | abandoned cart             |                2 |                0 |            0.00
+(63 rows)
+

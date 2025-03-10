@@ -1,0 +1,2 @@
+command,mean,stddev,median,user,system,min,max
+psql -U postgres -d ecommerce -f C:/Users/Administrator/Desktop/BigDataAssignment2/scripts/q2.sql,1.330244314,0.16964285547518645,1.312168514,0.4846875,0.09718750000000001,1.143496614,1.590606714
